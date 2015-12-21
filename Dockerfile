@@ -2,7 +2,7 @@ FROM java:8
 MAINTAINER Cesare Rocchi <c.rocchi@baasbox.com>
 WORKDIR /baasbox
 
-RUN wget --content-disposition http://www.baasbox.com/download/baasbox-stable.zip
+RUN wget --content-disposition "http://www.baasbox.com/?wpdmact=process&did=MTMuaG90bGluaw=="
 RUN unzip baasbox*.zip
 RUN rm baasbox*.zip
 RUN mv baasbox-*/ baasbox/
