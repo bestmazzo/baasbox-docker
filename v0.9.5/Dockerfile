@@ -3,7 +3,7 @@ MAINTAINER Matteo Mazzoni <matteo@bestmazzo.it>
 WORKDIR /baasbox
 
 # 0.9.5
-RUN wget --content-disposition "http://www.baasbox.com/?wpdmact=process&did=NTUuaG90bGluaw=="
+RUN wget --content-disposition "http://opensource.baasbox.com/?wpdmact=process&did=NTUuaG90bGluaw=="
 RUN unzip baasbox*.zip
 RUN rm baasbox*.zip
 RUN mv baasbox-*/ baasbox/
